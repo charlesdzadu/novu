@@ -157,7 +157,7 @@ services:
       REACT_APP_IS_SELF_HOSTED: 'true'
       REACT_APP_WS_URL: ${REACT_APP_WS_URL}
     ports:
-      - 4200:4200
+      - 4200
     command: ['/bin/sh', '-c', 'pnpm run envsetup:docker && pnpm run start:static:build']
 
 volumes:
